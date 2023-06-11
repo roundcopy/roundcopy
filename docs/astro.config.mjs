@@ -5,8 +5,6 @@ import netlify from '@astrojs/netlify/functions';
 const site = 'https://roundcopy.com';
 
 export default defineConfig({
-  output: 'server',
-  adapter: netlify(),
   site,
   integrations: [
     starlight({
