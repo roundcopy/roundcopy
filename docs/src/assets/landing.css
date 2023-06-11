@@ -1,10 +1,10 @@
 :root {
-  --purple-hsl: 255, 60%, 60%;
+  --purple-hsl: 120, 60%, 50%;
   --overlay-blurple: hsla(var(--purple-hsl), 0.2);
 }
 
 :root[data-theme='light'] {
-  --purple-hsl: 255, 85%, 65%;
+  --purple-hsl: 120, 85%, 65%;
 }
 
 [data-has-hero] .page {

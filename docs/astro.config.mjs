@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import netlify from '@astrojs/netlify/functions';
 
 const site = 'https://roundcopy.com';
 
@@ -8,7 +7,7 @@ export default defineConfig({
   site,
   integrations: [
     starlight({
-      title: 'Starlight',
+      title: 'Roundcopy',
       logo: {
         light: '/src/assets/logo-light.svg',
         dark: '/src/assets/logo-dark.svg',
@@ -18,7 +17,6 @@ export default defineConfig({
         baseUrl: 'https://github.com/roundcopy/roundcopy/edit/main/docs/',
       },
       social: {
-        github: 'https://github.com/roundcopy/',
       },
       head: [
         {
@@ -46,29 +44,18 @@ export default defineConfig({
         {
           label: 'Start Here',
           translations: {
-            de: 'Beginne hier',
-            es: 'Comienza aqui',
-            ja: 'ここからはじめる',
-            fr: 'Commencez ici',
           },
           items: [
             {
               label: 'Getting Started',
               link: 'getting-started',
               translations: {
-                de: 'Erste Schritte',
-                es: 'Empezando',
-                ja: '入門',
-                fr: 'Mise en route'
               },
             },
             {
               label: 'Environmental Impact',
               link: 'environmental-impact',
               translations: {
-                es: 'Documentación ecológica',
-                ja: '環境への負荷',
-                fr: 'Impact environnemental'
               },
             },
           ],
