@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const site = 'https://starlight.astro.build/';
+const site = 'https://roundcopy.com';
 
 export default defineConfig({
   site,
@@ -14,18 +14,17 @@ export default defineConfig({
         replacesTitle: true,
       },
       editLink: {
-        baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
+        baseUrl: 'https://github.com/roundcopy/roundcopy/edit/main/docs/',
       },
       social: {
-        github: 'https://github.com/withastro/starlight',
-        discord: 'https://astro.build/chat',
+        github: 'https://github.com/roundcopy/',
       },
       head: [
         {
           tag: 'script',
           attrs: {
-            src: 'https://cdn.usefathom.com/script.js',
-            'data-site': 'EZBHTSIG',
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-MMLV6YCEHM',
+            'data-site': 'G-MMLV6YCEHM',
             defer: true,
           },
         },
@@ -41,10 +40,6 @@ export default defineConfig({
       customCss: process.env.NO_GRADIENTS ? [] : ['/src/assets/landing.css'],
       locales: {
         root: { label: 'English', lang: 'en' },
-        de: { label: 'Deutsch', lang: 'de' },
-        es: { label: 'Español', lang: 'es' },
-        ja: { label: '日本語', lang: 'ja' },
-        fr: { label: 'Français', lang: 'fr' },
       },
       sidebar: [
         {
